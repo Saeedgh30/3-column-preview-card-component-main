@@ -3,8 +3,6 @@
   margin: 0;
 }
 body {
-  width: 187px;
-  height: 751px;
   margin: 35px 12px;
   color: hsla(0, 0%, 100%, 0.75);
   font-family: "Lexend Deca", sans-serif;
@@ -26,14 +24,10 @@ p {
   padding: 10px 20px 0 0;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-rows: 375px (3, 1fr);
-}
 .grid-item1 {
   background-color: hsl(31, 77%, 52%);
   width: 162px;
-  height: 288px;
+
   padding: 20px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -41,14 +35,14 @@ p {
 .grid-item2 {
   background-color: hsl(184, 100%, 22%);
   width: 162px;
-  height: 288px;
+
   padding: 20px;
 }
 
 .grid-item3 {
   background-color: hsl(179, 100%, 13%);
   width: 162px;
-  height: 288px;
+
   padding: 20px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -66,4 +60,11 @@ a:hover {
   color: white;
   background-color: inherit;
   border: 2px solid white;
+}
+
+@media all and (min-width: 900px) {
+  .grid-container {
+    display: flex;
+    justify-content: center;
+  }
 }
